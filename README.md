@@ -11,8 +11,7 @@
 
 ```c
 // in 'server_test.c'
-// send command by function 'send_command'
-
+// send command through 'struct Command'
 
 struct Command {
     enum CommandType type;
