@@ -5,7 +5,7 @@
 #include <linux/uaccess.h>
 
 #define DEVICE_NAME "gpio_matrix"
-#define CLASS_NAME "gpio"
+#define CLASS_NAME "kb-gpio"
 
 // Define the GPIO pins for the rows and columns
 static unsigned int row_pins[] = {15, 14};
