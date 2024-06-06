@@ -22,5 +22,6 @@ kb-test: kb-test.c Keyboard.c
 	$(CC) $(CFLAGS) -pthread -o $@ $^
 
 clean:
+	rm -f driver_ctl
 	rm -f kb-test
 	make -C $(KDIR)  M=$(shell pwd) clean
