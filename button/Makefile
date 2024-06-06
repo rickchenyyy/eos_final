@@ -18,5 +18,9 @@ endif
 driver_ctl: driver_ctl.c
 	$(CC) -o driver_ctl driver_ctl.c
 
+kb-test: kb-test.c Keyboard.c
+	$(CC) $(CFLAGS) -pthread -o $@ $^
+
 clean:
+	rm -f kb-test
 	make -C $(KDIR)  M=$(shell pwd) clean
